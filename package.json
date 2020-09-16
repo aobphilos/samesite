@@ -1,0 +1,40 @@
+{
+  "name": "samesite",
+  "version": "1.0.0",
+  "description": "SameSite = None",
+  "main": "src/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info src/app.js",
+    "dev": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aobphilos/samesite.git"
+  },
+  "keywords": [
+    "SameSite",
+    "Set-Cookie",
+    "SameSiteNone"
+  ],
+  "author": "Batman Sysy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aobphilos/samesite/issues"
+  },
+  "homepage": "https://github.com/aobphilos/samesite#readme",
+  "dependencies": {
+    "fastify": "^3.0.0",
+    "fastify-autoload": "^3.0.2",
+    "fastify-cli": "^2.2.0",
+    "fastify-cookie": "^4.1.0",
+    "fastify-plugin": "^2.0.0",
+    "fastify-static": "^3.2.0"
+  },
+  "devDependencies": {
+    "tap": "^14.0.0"
+  }
+}
