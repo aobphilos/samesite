@@ -1,4 +1,4 @@
-const { port } = require('./config');
+const { port, host } = require('./config');
 const path = require('path');
 
 const app = require('fastify')({
@@ -75,7 +75,7 @@ app.get('/demo/s2', async (req, res) => {
 
 /////////////////////////////////////////////////////////
 
-app.listen(port, (err, address) => {
+app.listen(port, host, (err, address) => {
   if (err) throw err;
   app.log.info(`server listening on ${address}`);
 });

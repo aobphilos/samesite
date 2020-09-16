@@ -7,8 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/**/*.test.js",
-    "start": "fastify start -l info src/app.js",
+    "start": "node src/app.js",
     "dev": "node src/app.js"
   },
   "repository": {
@@ -36,5 +35,8 @@
   },
   "devDependencies": {
     "tap": "^14.0.0"
+  },
+  "engines": {
+    "node": "14.9.0"
   }
 }
